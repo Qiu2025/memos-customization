@@ -1,0 +1,14 @@
+/* 隐藏侧边栏的 Explore 链接 */
+a[href="/explore"] {
+    display: none !important;
+}
+
+/* 隐藏侧边栏的 Inbox 链接 */
+a[href="/inbox"] {
+    display: none !important;
+}
+
+/* 隐藏页面所有的原生滚动条，但保留滚动功能（优化视觉） */
+::-webkit-scrollbar {
+    display: none !important;
+}
