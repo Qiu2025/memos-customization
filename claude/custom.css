@@ -1,38 +1,70 @@
-/* === Memos v0.26.2 Custom CSS === */
+/**
+ * Memos v0.26.2 Custom CSS
+ * 
+ * Each block below is INDEPENDENT and self-contained.
+ * Copy/paste any block you need to the end of your script.
+ */
 
-/* Tipografia y espaciado mejorado */
+
+/* ============================================
+ * TYPOGRAPHY
+ * ============================================ */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 :root {
   --memo-font: 'Inter', system-ui, sans-serif;
 }
+
 body {
   font-family: var(--memo-font) !important;
   -webkit-font-smoothing: antialiased;
 }
+
 .memo-content {
   font-size: 15px !important;
   line-height: 1.75 !important;
   letter-spacing: -0.01em;
 }
-.memo-content p { margin-bottom: 0.6em; }
 
-/* Layout más ancho disponible */
-.max-w-2xl, .max-w-3xl, .max-w-4xl, .max-w-5xl {
+.memo-content p {
+  margin-bottom: 0.6em;
+}
+
+
+/* ============================================
+ * LAYOUT
+ * Use full available width
+ * ============================================ */
+.max-w-2xl,
+.max-w-3xl,
+.max-w-4xl,
+.max-w-5xl {
   max-width: 100% !important;
 }
 
-/* Hover elevation */
+
+/* ============================================
+ * MEMO CARDS
+ * Subtle hover elevation effect
+ * ============================================ */
 .group.rounded-lg.border {
   transition: transform 0.18s ease, box-shadow 0.18s ease !important;
 }
+
 .group.rounded-lg.border:hover {
   transform: translateY(-3px) !important;
-  box-shadow: 0 8px 28px rgba(0,0,0,0.10) !important;
-  border-color: rgba(99,102,241,0.25) !important;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.10) !important;
+  border-color: rgba(99, 102, 241, 0.25) !important;
 }
 
-/* Better tags */
-a[href*="/tags/"], .tag-span, span[class*="tag"] {
+
+/* ============================================
+ * TAGS
+ * Pill-style appearance (colors applied via JS)
+ * ============================================ */
+a[href*="/tags/"],
+.tag-span,
+span[class*="tag"] {
   display: inline-block !important;
   padding: 1px 9px !important;
   border-radius: 99px !important;
@@ -41,28 +73,41 @@ a[href*="/tags/"], .tag-span, span[class*="tag"] {
   text-decoration: none !important;
   transition: opacity 0.15s !important;
 }
-a[href*="/tags/"]:hover, .tag-span:hover {
+
+a[href*="/tags/"]:hover,
+.tag-span:hover {
   opacity: 0.72 !important;
   text-decoration: none !important;
 }
 
-/* Better scrollbar */
-::-webkit-scrollbar { width: 5px; height: 5px; }
-::-webkit-scrollbar-track { background: transparent; }
+
+/* ============================================
+ * SCROLLBAR
+ * Minimal, theme-aware scrollbar
+ * ============================================ */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 ::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.15);
+  background: rgba(0, 0, 0, 0.15);
   border-radius: 99px;
 }
-::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.3); }
 
-.dark ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); }
-.dark ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.25); }
-
-/* Attachments más compactos - solo en vista list */
-body.view-list .grid.grid-cols-2.md\:grid-cols-3.lg\:grid-cols-4 {
-  grid-template-columns: repeat(10, 1fr) !important;
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
 }
-/* En masonry: 5 columnas */
-body.view-masonry .grid.grid-cols-2.md\:grid-cols-3.lg\:grid-cols-4 {
-  grid-template-columns: repeat(5, 1fr) !important;
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
 }
