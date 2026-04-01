@@ -1,0 +1,13 @@
+/* ==================================================
+ * MEMO CARD HOVER
+ * Subtle elevation effect on memo cards
+ * ================================================== */
+.group.rounded-lg.border {
+  transition: transform 0.18s ease, box-shadow 0.18s ease !important;
+}
+
+.group.rounded-lg.border:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.10) !important;
+  border-color: rgba(99, 102, 241, 0.25) !important;
+}

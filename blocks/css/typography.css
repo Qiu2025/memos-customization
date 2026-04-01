@@ -1,0 +1,24 @@
+/* ==================================================
+ * TYPOGRAPHY
+ * Inter font with optimized spacing and readability
+ * ================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --memo-font: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--memo-font) !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.memo-content {
+  font-size: 15px !important;
+  line-height: 1.75 !important;
+  letter-spacing: -0.01em;
+}
+
+.memo-content p {
+  margin-bottom: 0.6em;
+}

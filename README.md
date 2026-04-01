@@ -14,77 +14,78 @@ This repository contains **independent, copy-paste ready code blocks** that enha
 ## Repository Structure
 
 ```
-├── claude/       # Customizations generated with Claude
-├── gemini/       # Customizations generated with Gemini
-└── production/   # Best-of-both: combined features I actually use
+├── blocks/          # Individual feature files (pick & choose)
+│   ├── css/         # CSS customizations
+│   └── js/          # JavaScript features
+├── custom.css       # Complete bundle (all CSS features)
+├── custom.js        # Complete bundle (all JS features)
+└── archive/         # Original AI outputs for reference
 ```
 
 ## Available Features
 
-### CSS Customizations
-- **Full-width layout** - Use all available screen space
-- **Better typography** - Inter font with optimized spacing
-- **Hover effects** - Subtle card elevation on hover
-- **Custom scrollbar** - Minimal, theme-aware design
-- **Tag styling** - Pill-style tags with consistent colors
+### 🎨 CSS Customizations
 
-### JavaScript Features
-- **Tag Colors** - Consistent hash-based color palette for tags
-- **Keyboard Shortcuts**
-  - `Alt + F` - Focus search bar
-  - `Alt + ↑` - Scroll to top
-  - `Alt + ↓` - Scroll to bottom
-  - `Alt + N` - Focus editor
-- **Auto Focus** - Automatically focus editor on page load
-- **Word Counter** - Real-time word/character count with i18n support
-- **Compact Attachments** - Optimized grid layout for images/files
+| Feature | File | Description |
+|---------|------|-------------|
+| **Typography** | [`blocks/css/typography.css`](blocks/css/typography.css) | Inter font with optimized spacing |
+| **Full Width** | [`blocks/css/full-width.css`](blocks/css/full-width.css) | Use all available screen space |
+| **Memo Hover** | [`blocks/css/memo-hover.css`](blocks/css/memo-hover.css) | Subtle card elevation on hover |
+| **Tags** | [`blocks/css/tags.css`](blocks/css/tags.css) | Pill-style tag appearance |
+| **Scrollbar** | [`blocks/css/scrollbar.css`](blocks/css/scrollbar.css) | Minimal, theme-aware scrollbar |
+| **Hide Scrollbar** | [`blocks/css/hide-scrollbar.css`](blocks/css/hide-scrollbar.css) | Completely hide scrollbar |
+| **Hide Explore** | [`blocks/css/hide-explore.css`](blocks/css/hide-explore.css) | Hide "Explore" sidebar link |
+| **Hide Inbox** | [`blocks/css/hide-inbox.css`](blocks/css/hide-inbox.css) | Hide "Inbox" sidebar link |
 
-## Usage
+### ⚡ JavaScript Features
 
-### Option 1: Use Complete Files
-Copy the entire `custom.css` and `custom.js` from the `production/` folder to your Memos instance.
+| Feature | File | Description |
+|---------|------|-------------|
+| **Tag Colors** | [`blocks/js/tag-colors.js`](blocks/js/tag-colors.js) | Consistent hash-based color palette |
+| **Keyboard Shortcuts** | [`blocks/js/keyboard-shortcuts.js`](blocks/js/keyboard-shortcuts.js) | `Alt+F` search, `Alt+↑/↓` scroll |
+| **Auto Focus** | [`blocks/js/auto-focus.js`](blocks/js/auto-focus.js) | Focus editor on load + `Alt+N` |
+| **Compact Attachments** | [`blocks/js/compact-attachments.js`](blocks/js/compact-attachments.js) | Smaller image previews (10/5 cols) |
+| **Word Counter** | [`blocks/js/word-counter.js`](blocks/js/word-counter.js) | Real-time word/char count (i18n) |
 
-### Option 2: Pick Individual Features
-Each feature is wrapped in a self-contained block. Simply:
+## 🚀 Installation & Usage
 
-1. Open the file (`custom.css` or `custom.js`)
-2. Find the feature block you want (clearly marked with comments)
-3. Copy the entire block
-4. Paste it into your custom CSS/JS file
-
-**Example:**
-```js
-/* ==================================================
- * WORD COUNTER
- * Shows word/char count while typing (auto-hides)
- * ================================================== */
-(function wordCounter() {
-  // ... entire feature code ...
-})();
-```
-
-## Installation
-
-1. Go to your Memos settings
-2. Find the "Custom CSS" and "Custom JavaScript" sections
-3. Paste the desired code blocks
+### Option 1: Use Everything (Recommended)
+1. Open your Memos settings
+2. Navigate to **Custom CSS** section → Paste [`custom.css`](custom.css) content
+3. Navigate to **Custom JavaScript** section → Paste [`custom.js`](custom.js) content
 4. Save and reload
 
-## Customization
+### Option 2: Pick Individual Features
+1. Browse [`blocks/css/`](blocks/css/) or [`blocks/js/`](blocks/js/)
+2. Click the feature file you want
+3. Copy entire file content
+4. Paste into your Memos **Custom CSS** or **Custom JavaScript** section
+5. Save and reload
 
-All features use configurable constants at the top of each block:
+## ⚙️ Customization
+
+Features have configurable constants at the top:
 
 ```js
-const LIST_COLS = 10;        // Adjust attachment columns
-const HIDE_DELAY_MS = 2800;  // Word counter visibility time
-const DELAY_MS = 300;        // Auto-focus delay
+// In compact-attachments.js
+const LIST_COLS = 10;        // Change attachment columns (default: 10)
+const MASONRY_COLS = 5;      // Masonry view columns (default: 5)
+
+// In word-counter.js
+const HIDE_DELAY_MS = 2800;  // Counter visibility time in ms
 ```
 
-## Notes
+## 📌 Notes
 
-- Tested on **Memos v0.26.2** - may need adjustments for other versions
-- Some features inject CSS dynamically for true independence
+- **Version:** Tested on Memos v0.26.2
+- **Performance:** MutationObservers have minimal impact
+- **Independence:** Some features inject their own CSS dynamically
+- **Browser:** Best with Chrome/Edge/Firefox (WebKit scrollbar styling)
 
-## License
+## 🤝 Contributing
 
-MIT - Feel free to use, modify, and share
+Found a bug or have an improvement? Feel free to open an issue or PR!
+
+## 📄 License
+
+MIT - Use, modify, and share freely

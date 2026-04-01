@@ -1,0 +1,7 @@
+/* ==================================================
+ * HIDE EXPLORE SECTION
+ * Hides the "Explore" link from sidebar
+ * ================================================== */
+a[href="/explore"] {
+  display: none !important;
+}

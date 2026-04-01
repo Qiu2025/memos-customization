@@ -1,14 +1,11 @@
 /**
- * Memos v0.26.2 Custom CSS
- * 
- * Each block below is INDEPENDENT and self-contained.
- * Copy/paste any block you need to the end of your script.
+ * Memos v0.26.2 Custom CSS - Complete Bundle
+ * All CSS customizations in one file
  */
 
-
-/* ============================================
+/* ==================================================
  * TYPOGRAPHY
- * ============================================ */
+ * ================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
 :root {
@@ -31,10 +28,9 @@ body {
 }
 
 
-/* ============================================
- * LAYOUT
- * Use full available width
- * ============================================ */
+/* ==================================================
+ * FULL WIDTH LAYOUT
+ * ================================================== */
 .max-w-2xl,
 .max-w-3xl,
 .max-w-4xl,
@@ -43,10 +39,9 @@ body {
 }
 
 
-/* ============================================
- * MEMO CARDS
- * Subtle hover elevation effect
- * ============================================ */
+/* ==================================================
+ * MEMO CARD HOVER
+ * ================================================== */
 .group.rounded-lg.border {
   transition: transform 0.18s ease, box-shadow 0.18s ease !important;
 }
@@ -58,10 +53,9 @@ body {
 }
 
 
-/* ============================================
- * TAGS
- * Pill-style appearance (colors applied via JS)
- * ============================================ */
+/* ==================================================
+ * TAG STYLING
+ * ================================================== */
 a[href*="/tags/"],
 .tag-span,
 span[class*="tag"] {
@@ -81,18 +75,16 @@ a[href*="/tags/"]:hover,
 }
 
 
-/* ============================================
- * SCROLLBAR
- * Hide scrollbar
- * ============================================ */
+/* ==================================================
+ * HIDE SCROLLBAR
+ * ================================================== */
 ::-webkit-scrollbar {
     display: none !important;
 }
 
 
 /* ============================================
- * EXPLORE
- * Hide explore section
+ * HIDE EXPLORE SECTION
  * ============================================ */
 a[href="/explore"] {
     display: none !important;
@@ -100,8 +92,7 @@ a[href="/explore"] {
 
 
 /* ============================================
- * INBOX
- * Hide inbox section
+ * HIDE INBOX SECTION
  * ============================================ */
 a[href="/inbox"] {
     display: none !important;

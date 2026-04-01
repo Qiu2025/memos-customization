@@ -1,0 +1,7 @@
+/* ==================================================
+ * HIDE INBOX SECTION
+ * Hides the "Inbox" link from sidebar
+ * ================================================== */
+a[href="/inbox"] {
+  display: none !important;
+}

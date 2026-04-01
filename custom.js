@@ -1,14 +1,10 @@
 /**
- * Memos v0.26.2 Custom JavaScript
- * 
- * Each block below is INDEPENDENT and self-contained.
- * Copy/paste any block you need to the end of your script.
+ * Memos v0.26.2 Custom JavaScript - Complete Bundle
+ * All JavaScript features in one file
  */
-
 
 /* ==================================================
  * TAG COLORS
- * Assigns consistent colors to tags based on their name
  * ================================================== */
 (function tagColors() {
   const PALETTE = [
@@ -47,7 +43,6 @@
 
 /* ==================================================
  * KEYBOARD SHORTCUTS
- * Alt+F: Focus search | Alt+↑: Scroll top | Alt+↓: Scroll bottom
  * ================================================== */
 (function keyboardShortcuts() {
   document.addEventListener('keydown', e => {
@@ -74,7 +69,6 @@
 
 /* ==================================================
  * AUTO FOCUS EDITOR
- * Focus editor on page load + Alt+N shortcut
  * ================================================== */
 (function autoFocusEditor() {
   function focus() {
@@ -95,16 +89,12 @@
 
 /* ==================================================
  * COMPACT ATTACHMENTS
- * Makes attachment previews smaller based on view mode
- * List view: 10 columns | Masonry view: 5 columns
- * Self-contained: includes its own CSS
  * ================================================== */
 (function compactAttachments() {
   const GRID_SELECTOR = '.grid.grid-cols-2';
   const LIST_COLS = 10;
   const MASONRY_COLS = 5;
 
-  // Inject CSS once
   const style = document.createElement('style');
   style.textContent = `
     body.view-list ${GRID_SELECTOR} { grid-template-columns: repeat(${LIST_COLS}, 1fr) !important; }
@@ -112,7 +102,6 @@
   `;
   document.head.appendChild(style);
 
-  // Detect view mode and apply class
   function detect() {
     const grid = document.querySelector('[style*="grid-template-columns"]');
     if (!grid) return;
@@ -130,7 +119,6 @@
 
 /* ==================================================
  * WORD COUNTER
- * Shows word/char count while typing (auto-hides)
  * ================================================== */
 (function wordCounter() {
   const TRANSLATIONS = {
