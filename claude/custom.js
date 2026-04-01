@@ -64,20 +64,82 @@ document.addEventListener('keydown', e => {
   }
 });
 
+/* ---- Detectar modo de vista (masonry vs list) ---- */
+function detectViewMode() {
+  // Masonry usa grid con múltiples columnas, list usa 1 columna
+  const grid = document.querySelector('[style*="grid-template-columns"]');
+  if (grid) {
+    const style = grid.getAttribute('style') || '';
+    const isList = style.includes('repeat(1,');
+    document.body.classList.toggle('view-list', isList);
+    document.body.classList.toggle('view-masonry', !isList);
+  }
+}
+detectViewMode();
+new MutationObserver(detectViewMode).observe(document.body, { 
+  childList: true, subtree: true, attributes: true, attributeFilter: ['style'] 
+});
+
 })();
 
 /* ---- Contador de palabras y letras ---- */
 (function() {
   const pill = document.createElement('div');
-  Object.assign(pill.style, {
-    position: 'fixed', bottom: '18px', right: '18px',
-    background: 'rgba(15,15,15,0.7)', color: '#fff',
-    fontSize: '11px', padding: '4px 12px',
-    borderRadius: '99px', opacity: '0', zIndex: '9999',
-    transition: 'opacity 0.2s', pointerEvents: 'none',
-    fontFamily: 'monospace', backdropFilter: 'blur(4px)'
-  });
+  pill.id = 'custom-word-counter';
+  
+  // Aplicar estilos inline con !important para evitar conflictos
+  pill.setAttribute('style', `
+    position: fixed !important;
+    bottom: 16px !important;
+    right: 16px !important;
+    background-color: #ffffff !important;
+    color: #6b7280 !important;
+    font-size: 12px !important;
+    padding: 6px 12px !important;
+    border-radius: 6px !important;
+    opacity: 0 !important;
+    z-index: 9999 !important;
+    transition: opacity 0.2s !important;
+    pointer-events: none !important;
+    border: 1px solid #e5e7eb !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+    font-family: system-ui, sans-serif !important;
+  `);
   document.body.appendChild(pill);
+
+  // Traducciones
+  const i18n = {
+    en: { words: 'words', chars: 'chars' },
+    es: { words: 'palabras', chars: 'caracteres' },
+    zh: { words: '词', chars: '字符' },
+    ja: { words: '語', chars: '文字' },
+    de: { words: 'Wörter', chars: 'Zeichen' },
+    fr: { words: 'mots', chars: 'caractères' },
+    pt: { words: 'palavras', chars: 'caracteres' },
+    it: { words: 'parole', chars: 'caratteri' },
+    ko: { words: '단어', chars: '문자' },
+  };
+
+  function getLocale() {
+    // Intentar obtener de localStorage (donde Memos guarda preferencias)
+    try {
+      const stored = localStorage.getItem('locale') || localStorage.getItem('i18n-locale');
+      if (stored) return stored;
+    } catch(e) {}
+    // Fallback a atributo lang del HTML
+    return document.documentElement.lang || navigator.language || 'en';
+  }
+  
+  function formatCount(words, chars) {
+    const lang = getLocale().toLowerCase().split('-')[0];
+    const t = i18n[lang] || i18n.en;
+    return `${words} ${t.words} · ${chars} ${t.chars}`;
+  }
+
+  // Color neutral que funciona en modo claro y oscuro
+  pill.style.setProperty('background-color', '#374151', 'important');
+  pill.style.setProperty('color', '#f3f4f6', 'important');
+  pill.style.setProperty('border-color', '#4b5563', 'important');
 
   let timer;
   document.addEventListener('input', e => {
@@ -87,9 +149,9 @@ document.addEventListener('keydown', e => {
 
     const text = el.value || el.innerText || '';
     const words = text.trim().split(/\s+/).filter(Boolean).length;
-    pill.textContent = `${words} palabras · ${text.length} chars`;
-    pill.style.opacity = '1';
+    pill.textContent = formatCount(words, text.length);
+    pill.style.setProperty('opacity', '1', 'important');
     clearTimeout(timer);
-    timer = setTimeout(() => pill.style.opacity = '0', 2800);
+    timer = setTimeout(() => pill.style.setProperty('opacity', '0', 'important'), 2800);
   });
 })();
