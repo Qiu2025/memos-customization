@@ -50,12 +50,9 @@ This repository contains **independent, copy-paste ready code blocks** that enha
 ## 📸 Examples
 
 ### Tag Colors
-Consistent, visually distinct colors for each tag based on deterministic hashing.
-
-<!-- Replace with your screenshots -->
-![Tag Colors Example](./docs/images/tag-colors-example.png)
-
----
+| Default tags | [Pill-style only](blocks/css/tags.css) | [Pill with colors](blocks/js/tag-colors.js) |
+|----------|----------|----------|
+| <img width="460" height="220" alt="default" src="https://github.com/user-attachments/assets/c2921ce2-d9dd-4b65-a8b2-a70b550229af" /> | <img width="458" height="220" alt="pill-only" src="https://github.com/user-attachments/assets/da245dc8-f573-44ad-9fc8-b3efaac1dffa" /> | <img width="458" height="220" alt="pill-color" src="https://github.com/user-attachments/assets/3c788e82-dc26-4ea8-b9a5-cb51bff30d04" />
 
 ### Compact Attachments
 Optimized grid layout for attachments - 10 columns in list view, 5 in masonry view.
