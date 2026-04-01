@@ -166,12 +166,30 @@
   document.body.appendChild(pill);
 
   let timer;
+  
+  function getLanguage() {
+    // Try multiple localStorage keys that Memos might use
+    const keys = ['locale', 'i18n-locale', 'language', 'lang'];
+    for (const key of keys) {
+      const value = localStorage.getItem(key);
+      if (value) return value.toLowerCase().split('-')[0];
+    }
+    
+    // Try HTML lang attribute
+    if (document.documentElement.lang) {
+      return document.documentElement.lang.toLowerCase().split('-')[0];
+    }
+    
+    // Fallback to browser language
+    return (navigator.language || 'en').toLowerCase().split('-')[0];
+  }
+  
   document.addEventListener('input', e => {
     if (e.target.tagName !== 'TEXTAREA' && !e.target.isContentEditable) return;
     
     const text = e.target.value || e.target.innerText || '';
     const words = text.trim().split(/\s+/).filter(Boolean).length;
-    const lang = (localStorage.getItem('locale') || navigator.language || 'en').split('-')[0];
+    const lang = getLanguage();
     const t = TRANSLATIONS[lang] || TRANSLATIONS.en;
     
     pill.textContent = `${words} ${t.words} · ${text.length} ${t.chars}`;
