@@ -47,21 +47,25 @@ document.addEventListener('keydown', e => {
 function focusEditor() {
   const ed = document.querySelector('textarea.w-full.text-base.resize-none');
   if (ed && document.body.contains(ed)) { 
-    ed.focus({ preventScroll: true });
+    ed.focus({ preventScroll: true }); // No mover scroll al enfocar
     return true; 
   }
   return false;
 }
 
-// Solo al cargar la página por primera vez
+// Al cargar la página
 setTimeout(focusEditor, 300);
 
-// Alt+N para enfocar el editor
-document.addEventListener('keydown', e => {
-  if (e.altKey && (e.key === 'n' || e.key === 'N')) {
-    e.preventDefault();
-    focusEditor();
+// Al volver a la pestaña (cambio de tab)
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') {
+    setTimeout(focusEditor, 100);
   }
+});
+
+// Al volver a la ventana (window focus)
+window.addEventListener('focus', () => {
+  setTimeout(focusEditor, 100);
 });
 
 })();

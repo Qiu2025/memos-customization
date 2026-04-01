@@ -65,8 +65,8 @@ a[href*="/tags/"]:hover, .tag-span:hover {
 /* Attachments más compactos */
 /* Grid de imágenes: más columnas, items más pequeños */
 .grid.grid-cols-2.md\:grid-cols-3.lg\:grid-cols-4 {
-  grid-template-columns: repeat(10, 1fr) !important;
-  gap: 4px !important;
+  grid-template-columns: repeat(6, 1fr) !important;
+  gap: 6px !important;
 }
 /* Cada item de attachment más pequeño */
 .grid.grid-cols-2.md\:grid-cols-3.lg\:grid-cols-4 > div {
