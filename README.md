@@ -11,6 +11,9 @@ This repository contains **independent, copy-paste ready code blocks** that enha
 - ✅ **Modular** - Easy to add, remove, or customize
 - ✅ **Production-tested** - Used daily in my personal instance
 
+> [!NOTE]
+> Some code blocks may be more complex than necessary. I lack deep frontend expertise and haven't had time to optimize them, but they work reliably for my needs. Improvements are welcome via PRs.
+
 ## Repository Structure
 
 ```
