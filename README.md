@@ -47,12 +47,85 @@ This repository contains **independent, copy-paste ready code blocks** that enha
 | **Compact Attachments** | [`blocks/js/compact-attachments.js`](blocks/js/compact-attachments.js) | Smaller image previews (10/5 cols) |
 | **Word Counter** | [`blocks/js/word-counter.js`](blocks/js/word-counter.js) | Real-time word/char count (i18n) |
 
+## 📸 Examples
+
+### Tag Colors
+Consistent, visually distinct colors for each tag based on deterministic hashing.
+
+<!-- Replace with your screenshots -->
+![Tag Colors Example](./docs/images/tag-colors-example.png)
+
+---
+
+### Compact Attachments
+Optimized grid layout for attachments - 10 columns in list view, 5 in masonry view.
+
+**Before vs After:**
+
+<table>
+<tr>
+<td width="50%">
+
+**Default**
+<!-- Replace with before screenshot -->
+![Before](./docs/images/attachments-before.png)
+
+</td>
+<td width="50%">
+
+**With Compact Attachments**
+<!-- Replace with after screenshot -->
+![After](./docs/images/attachments-after.png)
+
+</td>
+</tr>
+</table>
+
+---
+
+### Word Counter
+Real-time word and character count with multi-language support. Auto-hides after 2.8 seconds.
+
+<!-- Replace with video/gif showing the counter in action -->
+![Word Counter Demo](./docs/images/word-counter-demo.gif)
+
+---
+
+### Memo Hover Effect
+Subtle elevation on hover for better visual feedback.
+
+<!-- Replace with screenshot or gif showing hover effect -->
+![Hover Effect](./docs/images/hover-effect.gif)
+
+---
+
+### Hide Sidebar Sections
+Clean up your sidebar by hiding unused sections (Explore, Inbox).
+
+<!-- Replace with before/after comparison -->
+<table>
+<tr>
+<td width="50%">
+
+**Default Sidebar**
+![Default](./docs/images/sidebar-before.png)
+
+</td>
+<td width="50%">
+
+**Clean Sidebar**
+![Clean](./docs/images/sidebar-after.png)
+
+</td>
+</tr>
+</table>
+
 ## 🚀 Installation & Usage
 
 ### Option 1: Use My Setup (Recommended)
 1. Open your Memos settings
-2. Navigate to **Custom CSS** section → Paste [`custom.css`](custom.css) content (my personal selection)
-3. Navigate to **Custom JavaScript** section → Paste [`custom.js`](custom.js) content (my personal selection)
+2. Navigate to **Custom CSS** section → Paste [`custom.css`](custom.css) content 
+3. Navigate to **Custom JavaScript** section → Paste [`custom.js`](custom.js) content
 4. Save and reload
 
 ### Option 2: Pick Individual Features
