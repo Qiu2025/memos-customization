@@ -49,73 +49,35 @@ This repository contains **independent, copy-paste ready code blocks** that enha
 
 ## 📸 Examples
 
-### Tag Colors
+### Better tags
 | Default tags | [Pill-style only](blocks/css/tags.css) | [Pill with colors](blocks/js/tag-colors.js) |
 |----------|----------|----------|
-| <img width="460" height="220" alt="default" src="https://github.com/user-attachments/assets/c2921ce2-d9dd-4b65-a8b2-a70b550229af" /> | <img width="458" height="220" alt="pill-only" src="https://github.com/user-attachments/assets/da245dc8-f573-44ad-9fc8-b3efaac1dffa" /> | <img width="458" height="220" alt="pill-color" src="https://github.com/user-attachments/assets/3c788e82-dc26-4ea8-b9a5-cb51bff30d04" />
+| <img width="460" height="220" alt="default" src="https://github.com/user-attachments/assets/c2921ce2-d9dd-4b65-a8b2-a70b550229af" /> | <img width="458" height="220" alt="pill-only" src="https://github.com/user-attachments/assets/da245dc8-f573-44ad-9fc8-b3efaac1dffa" /> | <img width="458" height="220" alt="pill-color" src="https://github.com/user-attachments/assets/3c788e82-dc26-4ea8-b9a5-cb51bff30d04" /> |
 
-### Compact Attachments
+### Full width
+| Before | [After](blocks/css/full-width.css) |
+| :---: | :---: |
+| <img width="1460" height="909" alt="before" src="https://github.com/user-attachments/assets/98f33680-563e-4ef9-8114-a3f3f71a3856" /> | <img width="1456" height="907" alt="after" src="https://github.com/user-attachments/assets/912b6943-6169-40a1-8f7c-e0a3275987e7" /> |
+
+
+### Compact attachments
 Optimized grid layout for attachments - 10 columns in list view, 5 in masonry view.
 
-**Before vs After:**
+| Default tags | [Pill-style only](blocks/css/tags.css) | [Pill with colors](blocks/js/tag-colors.js) |
+|----------|----------|----------|
+|  |  |  |
 
-<table>
-<tr>
-<td width="50%">
-
-**Default**
-<!-- Replace with before screenshot -->
-![Before](./docs/images/attachments-before.png)
-
-</td>
-<td width="50%">
-
-**With Compact Attachments**
-<!-- Replace with after screenshot -->
-![After](./docs/images/attachments-after.png)
-
-</td>
-</tr>
-</table>
-
----
-
-### Word Counter
+### Word counter
 Real-time word and character count with multi-language support. Auto-hides after 2.8 seconds.
 
-<!-- Replace with video/gif showing the counter in action -->
-![Word Counter Demo](./docs/images/word-counter-demo.gif)
 
----
-
-### Memo Hover Effect
+### Memo hover effect
 Subtle elevation on hover for better visual feedback.
 
-<!-- Replace with screenshot or gif showing hover effect -->
-![Hover Effect](./docs/images/hover-effect.gif)
 
----
-
-### Hide Sidebar Sections
+### Hide sidebar sections
 Clean up your sidebar by hiding unused sections (Explore, Inbox).
 
-<!-- Replace with before/after comparison -->
-<table>
-<tr>
-<td width="50%">
-
-**Default Sidebar**
-![Default](./docs/images/sidebar-before.png)
-
-</td>
-<td width="50%">
-
-**Clean Sidebar**
-![Clean](./docs/images/sidebar-after.png)
-
-</td>
-</tr>
-</table>
 
 ## 🚀 Installation & Usage
 
