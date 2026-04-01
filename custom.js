@@ -14,6 +14,28 @@
     ['#fdf4ff', '#86198f'], ['#fff7ed', '#9a3412'], ['#f0f9ff', '#075985'],
   ];
 
+  // Inject pill styles
+  const style = document.createElement('style');
+  style.textContent = `
+    a[href*="/tags/"],
+    .tag-span,
+    span[class*="tag"] {
+      display: inline-block !important;
+      padding: 1px 9px !important;
+      border-radius: 99px !important;
+      font-size: 12px !important;
+      font-weight: 500 !important;
+      text-decoration: none !important;
+      transition: opacity 0.15s !important;
+    }
+    a[href*="/tags/"]:hover,
+    .tag-span:hover {
+      opacity: 0.72 !important;
+      text-decoration: none !important;
+    }
+  `;
+  document.head.appendChild(style);
+
   function hash(str) {
     let a = 0x9e3779b9, b = 0x6c62272e;
     for (let i = 0; i < str.length; i++) {

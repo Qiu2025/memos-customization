@@ -31,7 +31,7 @@ This repository contains **independent, copy-paste ready code blocks** that enha
 | **Typography** | [`blocks/css/typography.css`](blocks/css/typography.css) | Inter font with optimized spacing |
 | **Full Width** | [`blocks/css/full-width.css`](blocks/css/full-width.css) | Use all available screen space |
 | **Memo Hover** | [`blocks/css/memo-hover.css`](blocks/css/memo-hover.css) | Subtle card elevation on hover |
-| **Tags** | [`blocks/css/tags.css`](blocks/css/tags.css) | Pill-style tag appearance |
+| **Tag Styling** | [`blocks/css/tags.css`](blocks/css/tags.css) | Pill-style tags (no colors) |
 | **Scrollbar** | [`blocks/css/scrollbar.css`](blocks/css/scrollbar.css) | Minimal, theme-aware scrollbar |
 | **Hide Scrollbar** | [`blocks/css/hide-scrollbar.css`](blocks/css/hide-scrollbar.css) | Completely hide scrollbar |
 | **Hide Explore** | [`blocks/css/hide-explore.css`](blocks/css/hide-explore.css) | Hide "Explore" sidebar link |
@@ -41,7 +41,7 @@ This repository contains **independent, copy-paste ready code blocks** that enha
 
 | Feature | File | Description |
 |---------|------|-------------|
-| **Tag Colors** | [`blocks/js/tag-colors.js`](blocks/js/tag-colors.js) | Consistent hash-based color palette |
+| **Tag Colors** | [`blocks/js/tag-colors.js`](blocks/js/tag-colors.js) | Colored pill-style tags (self-contained) |
 | **Keyboard Shortcuts** | [`blocks/js/keyboard-shortcuts.js`](blocks/js/keyboard-shortcuts.js) | `Alt+F` search, `Alt+↑/↓` scroll |
 | **Auto Focus** | [`blocks/js/auto-focus.js`](blocks/js/auto-focus.js) | Focus editor on load + `Alt+N` |
 | **Compact Attachments** | [`blocks/js/compact-attachments.js`](blocks/js/compact-attachments.js) | Smaller image previews (10/5 cols) |
