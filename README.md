@@ -17,8 +17,8 @@ This repository contains **independent, copy-paste ready code blocks** that enha
 ├── blocks/          # Individual feature files (pick & choose)
 │   ├── css/         # CSS customizations
 │   └── js/          # JavaScript features
-├── custom.css       # Complete bundle (all CSS features)
-├── custom.js        # Complete bundle (all JS features)
+├── custom.css       # My personal setup (selected CSS features)
+├── custom.js        # My personal setup (selected JS features)
 └── archive/         # Original AI outputs for reference
 ```
 
@@ -49,10 +49,10 @@ This repository contains **independent, copy-paste ready code blocks** that enha
 
 ## 🚀 Installation & Usage
 
-### Option 1: Use Everything (Recommended)
+### Option 1: Use My Setup (Recommended)
 1. Open your Memos settings
-2. Navigate to **Custom CSS** section → Paste [`custom.css`](custom.css) content
-3. Navigate to **Custom JavaScript** section → Paste [`custom.js`](custom.js) content
+2. Navigate to **Custom CSS** section → Paste [`custom.css`](custom.css) content (my personal selection)
+3. Navigate to **Custom JavaScript** section → Paste [`custom.js`](custom.js) content (my personal selection)
 4. Save and reload
 
 ### Option 2: Pick Individual Features

@@ -1,6 +1,6 @@
 /**
- * Memos v0.26.2 Custom JavaScript - Complete Bundle
- * All JavaScript features in one file
+ * Memos v0.26.2 Custom JavaScript - My Personal Setup
+ * Selected JavaScript features I use daily
  */
 
 /* ==================================================
