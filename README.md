@@ -65,16 +65,11 @@ This repository contains **independent, copy-paste ready code blocks** that enha
 | <img width="1462" height="908" alt="before" src="https://github.com/user-attachments/assets/5872d6cf-d619-46dd-ab67-33928e62caa4" /> | <img width="1478" height="911" alt="after" src="https://github.com/user-attachments/assets/c847c6b8-6f51-40d3-8b72-acf2bd975713" /> |
 
 ### Word counter
-Real-time word and character count with multi-language support. Auto-hides after 2.8 seconds.
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/5395884f-1e9c-4791-b1ea-a02650a40607"></video>
+</div>
 
-
-### Memo hover effect
-Subtle elevation on hover for better visual feedback.
-
-
-### Hide sidebar sections
-Clean up your sidebar by hiding unused sections (Explore, Inbox).
-
+For more, check [Available Features](#available-features) section
 
 ## 🚀 Installation & Usage
 
@@ -107,7 +102,6 @@ const HIDE_DELAY_MS = 2800;  // Counter visibility time in ms
 ## 📌 Notes
 
 - **Version:** Tested on Memos v0.26.2
-- **Performance:** MutationObservers have minimal impact
 - **Independence:** Some features inject their own CSS dynamically
 - **Browser:** Best with Chrome/Edge/Firefox (WebKit scrollbar styling)
 
