@@ -51,7 +51,7 @@ This repository contains **independent, copy-paste ready code blocks** that enha
 
 ### Better tags
 | Default tags | [Pill-style only](blocks/css/tags.css) | [Pill with colors](blocks/js/tag-colors.js) |
-|----------|----------|----------|
+| :---: | :---: | :---: |
 | <img width="460" height="220" alt="default" src="https://github.com/user-attachments/assets/c2921ce2-d9dd-4b65-a8b2-a70b550229af" /> | <img width="458" height="220" alt="pill-only" src="https://github.com/user-attachments/assets/da245dc8-f573-44ad-9fc8-b3efaac1dffa" /> | <img width="458" height="220" alt="pill-color" src="https://github.com/user-attachments/assets/3c788e82-dc26-4ea8-b9a5-cb51bff30d04" /> |
 
 ### Full width
@@ -59,13 +59,10 @@ This repository contains **independent, copy-paste ready code blocks** that enha
 | :---: | :---: |
 | <img width="1460" height="909" alt="before" src="https://github.com/user-attachments/assets/98f33680-563e-4ef9-8114-a3f3f71a3856" /> | <img width="1456" height="907" alt="after" src="https://github.com/user-attachments/assets/912b6943-6169-40a1-8f7c-e0a3275987e7" /> |
 
-
 ### Compact attachments
-Optimized grid layout for attachments - 10 columns in list view, 5 in masonry view.
-
-| Default tags | [Pill-style only](blocks/css/tags.css) | [Pill with colors](blocks/js/tag-colors.js) |
-|----------|----------|----------|
-|  |  |  |
+| Before |  [After](blocks/js/compact-attachments.js) |
+| :---: | :---: |
+| <img width="1462" height="908" alt="before" src="https://github.com/user-attachments/assets/5872d6cf-d619-46dd-ab67-33928e62caa4" /> | <img width="1478" height="911" alt="after" src="https://github.com/user-attachments/assets/c847c6b8-6f51-40d3-8b72-acf2bd975713" /> |
 
 ### Word counter
 Real-time word and character count with multi-language support. Auto-hides after 2.8 seconds.
