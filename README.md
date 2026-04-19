@@ -1,6 +1,6 @@
 # Memos Customization
 
-Personal CSS and JavaScript customizations for [Memos](https://github.com/usememos/memos) v0.26.x and v0.27.x to make it more productive and visually pleasant.
+Personal CSS and JavaScript customizations for [Memos](https://github.com/usememos/memos) to make it more productive and visually pleasant.
 
 ## About
 
@@ -23,35 +23,34 @@ This repository contains **independent, copy-paste ready code blocks** that enha
 │   │   └── js/      # JavaScript features
 │   ├── custom.css   # My personal setup (selected CSS features)
 │   └── custom.js    # My personal setup (selected JS features)
-├── v0.27.x/         # Snippets for Memos version 0.27.x (Structure is identical)
-└── archive/         # Original AI outputs for reference
+└── v0.27.x/         # Snippets for Memos version 0.27.x (Structure is identical)
 ```
 
 ## Available Features
 
 ### 🎨 CSS Customizations
 
-| Feature | File | Description |
-|---------|------|-------------|
-| **Typography** | [`v0.26.x/blocks/css/typography.css`](v0.26.x/blocks/css/typography.css) | Inter font with optimized spacing |
-| **Full Width** | [`v0.26.x/blocks/css/full-width.css`](v0.26.x/blocks/css/full-width.css) | Use all available screen space |
-| **Memo Hover** | [`v0.26.x/blocks/css/memo-hover.css`](v0.26.x/blocks/css/memo-hover.css) | Subtle card elevation on hover |
-| **Tag Styling** | [`v0.26.x/blocks/css/tags.css`](v0.26.x/blocks/css/tags.css) | Pill-style tags (no colors) |
-| **Scrollbar** | [`v0.26.x/blocks/css/scrollbar.css`](v0.26.x/blocks/css/scrollbar.css) | Minimal, theme-aware scrollbar |
-| **Hide Scrollbar** | [`v0.26.x/blocks/css/hide-scrollbar.css`](v0.26.x/blocks/css/hide-scrollbar.css) | Completely hide scrollbar |
-| **Hide Explore** | [`v0.26.x/blocks/css/hide-explore.css`](v0.26.x/blocks/css/hide-explore.css) | Hide "Explore" sidebar link |
-| **Hide Inbox** | [`v0.26.x/blocks/css/hide-inbox.css`](v0.26.x/blocks/css/hide-inbox.css) | Hide "Inbox" sidebar link |
+| Feature | Description | v0.26.x | v0.27.x |
+|---------|-------------|---------|---------|
+| **Typography** | Inter font with optimized spacing | [css](v0.26.x/blocks/css/typography.css) | [css](v0.27.x/blocks/css/typography.css) |
+| **Full Width** | Use all available screen space | [css](v0.26.x/blocks/css/full-width.css) | [css](v0.27.x/blocks/css/full-width.css) |
+| **Memo Hover** | Subtle card elevation on hover | [css](v0.26.x/blocks/css/memo-hover.css) | [css](v0.27.x/blocks/css/memo-hover.css) |
+| **Tag Styling** | Pill-style tags (no colors) | [css](v0.26.x/blocks/css/tags.css) | [css](v0.27.x/blocks/css/tags.css) |
+| **Scrollbar** | Minimal, theme-aware scrollbar | [css](v0.26.x/blocks/css/scrollbar.css) | [css](v0.27.x/blocks/css/scrollbar.css) |
+| **Hide Scrollbar** | Completely hide scrollbar | [css](v0.26.x/blocks/css/hide-scrollbar.css) | [css](v0.27.x/blocks/css/hide-scrollbar.css) |
+| **Hide Explore** | Hide "Explore" sidebar link | [css](v0.26.x/blocks/css/hide-explore.css) | [css](v0.27.x/blocks/css/hide-explore.css) |
+| **Hide Inbox** | Hide "Inbox" sidebar link | [css](v0.26.x/blocks/css/hide-inbox.css) | [css](v0.27.x/blocks/css/hide-inbox.css) |
 
 ### ⚡ JavaScript Features
 
-| Feature | File | Description |
-|---------|------|-------------|
-| **Tag Colors** | [`v0.26.x/blocks/js/tag-colors.js`](v0.26.x/blocks/js/tag-colors.js) | Colored pill-style tags (self-contained) |
-| **Keyboard Shortcuts** | [`v0.26.x/blocks/js/keyboard-shortcuts.js`](v0.26.x/blocks/js/keyboard-shortcuts.js) | `Alt+F` search, `Alt+↑/↓` scroll |
-| **Auto Focus** | [`v0.26.x/blocks/js/auto-focus.js`](v0.26.x/blocks/js/auto-focus.js) | Focus editor on load + `Alt+N` |
-| **Compact Attachments** | [`v0.26.x/blocks/js/compact-attachments.js`](v0.26.x/blocks/js/compact-attachments.js) | Smaller image previews (10/5 cols) |
-| **Word Counter** | [`v0.26.x/blocks/js/word-counter.js`](v0.26.x/blocks/js/word-counter.js) | Real-time word/char count (i18n) |
-| **Prevent Close Unsaved** | [`v0.26.x/blocks/js/prevent-close-unsaved.js`](v0.26.x/blocks/js/prevent-close-unsaved.js) | Warn before exiting with unsaved text |
+| Feature | Description | v0.26.x | v0.27.x |
+|---------|-------------|---------|---------|
+| **Tag Colors** | Colored pill-style tags (self-contained) | [js](v0.26.x/blocks/js/tag-colors.js) | [js](v0.27.x/blocks/js/tag-colors.js) |
+| **Keyboard Shortcuts** | `Alt+F` search, `Alt+↑/↓` scroll | [js](v0.26.x/blocks/js/keyboard-shortcuts.js) | [js](v0.27.x/blocks/js/keyboard-shortcuts.js) |
+| **Auto Focus** | Focus editor on load + `Alt+N` | [js](v0.26.x/blocks/js/auto-focus.js) | [js](v0.27.x/blocks/js/auto-focus.js) |
+| **Compact Attachments** | Smaller image previews (10/5 cols) | [js](v0.26.x/blocks/js/compact-attachments.js) | [js](v0.27.x/blocks/js/compact-attachments.js) |
+| **Word Counter** | Real-time word/char count (i18n) | [js](v0.26.x/blocks/js/word-counter.js) | [js](v0.27.x/blocks/js/word-counter.js) |
+| **Prevent Close Unsaved** | Warn before exiting with unsaved text | [js](v0.26.x/blocks/js/prevent-close-unsaved.js) | [js](v0.27.x/blocks/js/prevent-close-unsaved.js) |
 
 ## 📸 Examples
 
@@ -81,16 +80,16 @@ For more, check [Available Features](#available-features) section
 
 ### Option 1: Use My Setup (Recommended)
 1. Open your Memos settings
-2. Navigate to **Custom CSS** section → Paste [`v0.26.x/custom.css`](v0.26.x/custom.css) content 
-3. Navigate to **Custom JavaScript** section → Paste [`v0.26.x/custom.js`](v0.26.x/custom.js) content
+2. Navigate to **Custom CSS** section → Paste the content of your preferred version (`v0.26.x/custom.css` or `v0.27.x/custom.css`)
+3. Navigate to **Custom JavaScript** section → Paste the content of your preferred version (`v0.26.x/custom.js` or `v0.27.x/custom.js`)
 4. Save and reload
 
 ### Option 2: Pick Individual Features
-1. Browse [`v0.26.x/blocks/css/`](v0.26.x/blocks/css/) or [`v0.26.x/blocks/js/`](v0.26.x/blocks/js/)
-2. Click the feature file you want
-3. Copy entire file content
-4. Paste into your Memos **Custom CSS** or **Custom JavaScript** section
-5. Save and reload
+1. Browse the features in the tables above.
+2. Click the `[css]` or `[js]` link matching your installed Memos version (v0.26.x or v0.27.x).
+3. Copy entire file content.
+4. Paste into your Memos **Custom CSS** or **Custom JavaScript** section.
+5. Save and reload.
 
 ## ⚙️ Customization
 
