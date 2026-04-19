@@ -48,7 +48,7 @@ This repository contains **independent, copy-paste ready code blocks** that enha
 | **Tag Colors** | Colored pill-style tags (self-contained) | [js](v0.26.x/blocks/js/tag-colors.js) | [js](v0.27.x/blocks/js/tag-colors.js) |
 | **Keyboard Shortcuts** | `Alt+F` search, `Alt+T` insert timestamp, `Alt+↑/↓` scroll | [js](v0.26.x/blocks/js/keyboard-shortcuts.js) | [js](v0.27.x/blocks/js/keyboard-shortcuts.js) |
 | **Auto Focus** | Focus editor on load + `Alt+N` | [js](v0.26.x/blocks/js/auto-focus.js) | [js](v0.27.x/blocks/js/auto-focus.js) |
-| **Compact Attachments** | Smaller image previews (10/5 cols) | [js](v0.26.x/blocks/js/compact-attachments.js) | [js](v0.27.x/blocks/js/compact-attachments.js) |
+| **Compact Attachments** | Smaller image previews (10/5 cols) | [js](v0.26.x/blocks/js/compact-attachments.js) | ❌ Not supported |
 | **Word Counter** | Real-time word/char count (i18n) | [js](v0.26.x/blocks/js/word-counter.js) | [js](v0.27.x/blocks/js/word-counter.js) |
 | **Prevent Close Unsaved** | Warn before exiting with unsaved text | [js](v0.26.x/blocks/js/prevent-close-unsaved.js) | [js](v0.27.x/blocks/js/prevent-close-unsaved.js) |
 
@@ -96,7 +96,7 @@ For more, check [Available Features](#available-features) section
 Features have configurable constants at the top:
 
 ```js
-// In compact-attachments.js
+// In compact-attachments.js (v0.26.x only)
 const LIST_COLS = 10;        // Change attachment columns (default: 10)
 const MASONRY_COLS = 5;      // Masonry view columns (default: 5)
 
