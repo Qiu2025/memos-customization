@@ -172,19 +172,36 @@
  * WORD COUNTER
  * Shows word and character count while typing
  * Auto-hides after 2.8 seconds
- * Supports 9 languages (en, es, zh, ja, de, fr, pt, it, ko)
+ * Supports multiple languages (all Memos supported locales)
  * ================================================== */
 (function wordCounter() {
   const TRANSLATIONS = {
+    ar: { words: 'كلمات', chars: 'أحرف' },
+    cs: { words: 'slov', chars: 'znaků' },
+    da: { words: 'ord', chars: 'tegn' },
+    de: { words: 'Wörter', chars: 'Zeichen' },
     en: { words: 'words', chars: 'chars' },
     es: { words: 'palabras', chars: 'caracteres' },
-    zh: { words: '词', chars: '字符' },
-    ja: { words: '語', chars: '文字' },
-    de: { words: 'Wörter', chars: 'Zeichen' },
     fr: { words: 'mots', chars: 'caractères' },
-    pt: { words: 'palavras', chars: 'caracteres' },
+    hi: { words: 'शब्द', chars: 'वर्ण' },
+    hr: { words: 'riječi', chars: 'znakova' },
+    id: { words: 'kata', chars: 'karakter' },
     it: { words: 'parole', chars: 'caratteri' },
+    ja: { words: '語', chars: '文字' },
     ko: { words: '단어', chars: '문자' },
+    nl: { words: 'woorden', chars: 'tekens' },
+    no: { words: 'ord', chars: 'tegn' },
+    pl: { words: 'słów', chars: 'znaków' },
+    pt: { words: 'palavras', chars: 'caracteres' },
+    ro: { words: 'cuvinte', chars: 'caractere' },
+    ru: { words: 'слов', chars: 'символов' },
+    sl: { words: 'besed', chars: 'znakov' },
+    sv: { words: 'ord', chars: 'tecken' },
+    th: { words: 'คำ', chars: 'ตัวอักษร' },
+    tr: { words: 'kelime', chars: 'karakter' },
+    uk: { words: 'слів', chars: 'символів' },
+    vi: { words: 'từ', chars: 'ký tự' },
+    zh: { words: '词', chars: '字符' },
   };
 
   const pill = document.createElement('div');
@@ -230,6 +247,7 @@
     timer = setTimeout(() => pill.style.opacity = '0', 2800);
   });
 })();
+
 
 /* ==================================================
  * PREVENT CLOSE UNSAVED
