@@ -5,6 +5,7 @@
 
 /* ==================================================
  * TYPOGRAPHY
+ * Inter font with optimized spacing and readability
  * ================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
@@ -30,6 +31,7 @@ body {
 
 /* ==================================================
  * FULL WIDTH LAYOUT
+ * Use all available screen space
  * ================================================== */
 .max-w-2xl,
 .max-w-3xl,
@@ -41,6 +43,7 @@ body {
 
 /* ==================================================
  * MEMO CARD HOVER
+ * Subtle elevation effect on memo cards
  * ================================================== */
 .group.rounded-lg.border {
   transition: transform 0.18s ease, box-shadow 0.18s ease !important;
@@ -54,46 +57,32 @@ body {
 
 
 /* ==================================================
- * TAG STYLING
+ * HIDE SCROLLBAR
+ * Completely hides scrollbar while keeping scroll functionality
  * ================================================== */
-a[href*="/tags/"],
-.tag-span,
-span[class*="tag"] {
-  display: inline-block !important;
-  padding: 1px 9px !important;
-  border-radius: 99px !important;
-  font-size: 12px !important;
-  font-weight: 500 !important;
-  text-decoration: none !important;
-  transition: opacity 0.15s !important;
+::-webkit-scrollbar {
+  display: none !important;
 }
 
-a[href*="/tags/"]:hover,
-.tag-span:hover {
-  opacity: 0.72 !important;
-  text-decoration: none !important;
+/* For Firefox */
+* {
+  scrollbar-width: none !important;
 }
 
 
 /* ==================================================
- * HIDE SCROLLBAR
- * ================================================== */
-::-webkit-scrollbar {
-    display: none !important;
-}
-
-
-/* ============================================
  * HIDE EXPLORE SECTION
- * ============================================ */
+ * Hides the "Explore" link from sidebar
+ * ================================================== */
 a[href="/explore"] {
-    display: none !important;
+  display: none !important;
 }
 
 
-/* ============================================
+/* ==================================================
  * HIDE INBOX SECTION
- * ============================================ */
+ * Hides the "Inbox" link from sidebar
+ * ================================================== */
 a[href="/inbox"] {
-    display: none !important;
+  display: none !important;
 }
