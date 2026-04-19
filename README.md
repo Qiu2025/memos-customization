@@ -46,6 +46,7 @@ This repository contains **independent, copy-paste ready code blocks** that enha
 | **Auto Focus** | [`blocks/js/auto-focus.js`](blocks/js/auto-focus.js) | Focus editor on load + `Alt+N` |
 | **Compact Attachments** | [`blocks/js/compact-attachments.js`](blocks/js/compact-attachments.js) | Smaller image previews (10/5 cols) |
 | **Word Counter** | [`blocks/js/word-counter.js`](blocks/js/word-counter.js) | Real-time word/char count (i18n) |
+| **Prevent Close Unsaved** | [`blocks/js/prevent-close-unsaved.js`](blocks/js/prevent-close-unsaved.js) | Warn before exiting with unsaved text |
 
 ## 📸 Examples
 
