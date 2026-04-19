@@ -23,7 +23,7 @@
     .tag-span,
     span[class*="tag"] {
       display: inline-block !important;
-      padding: 1px 9px !important;
+      padding: 5px 10px !important;
       border-radius: 99px !important;
       font-size: 12px !important;
       font-weight: 500 !important;
