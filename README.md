@@ -46,7 +46,7 @@ This repository contains **independent, copy-paste ready code blocks** that enha
 | Feature | Description | v0.26.x | v0.27.x |
 |---------|-------------|---------|---------|
 | **Tag Colors** | Colored pill-style tags (self-contained) | [js](v0.26.x/blocks/js/tag-colors.js) | [js](v0.27.x/blocks/js/tag-colors.js) |
-| **Keyboard Shortcuts** | `Alt+F` search, `Alt+↑/↓` scroll | [js](v0.26.x/blocks/js/keyboard-shortcuts.js) | [js](v0.27.x/blocks/js/keyboard-shortcuts.js) |
+| **Keyboard Shortcuts** | `Alt+F` search, `Alt+T` insert timestamp, `Alt+↑/↓` scroll | [js](v0.26.x/blocks/js/keyboard-shortcuts.js) | [js](v0.27.x/blocks/js/keyboard-shortcuts.js) |
 | **Auto Focus** | Focus editor on load + `Alt+N` | [js](v0.26.x/blocks/js/auto-focus.js) | [js](v0.27.x/blocks/js/auto-focus.js) |
 | **Compact Attachments** | Smaller image previews (10/5 cols) | [js](v0.26.x/blocks/js/compact-attachments.js) | [js](v0.27.x/blocks/js/compact-attachments.js) |
 | **Word Counter** | Real-time word/char count (i18n) | [js](v0.26.x/blocks/js/word-counter.js) | [js](v0.27.x/blocks/js/word-counter.js) |
