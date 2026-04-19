@@ -1,5 +1,5 @@
 /**
- * Memos v0.26.2 Custom JavaScript - My Personal Setup
+ * Memos v0.27.1 Custom JavaScript - My Personal Setup
  * Selected JavaScript features I use daily
  */
 
