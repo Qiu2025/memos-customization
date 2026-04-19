@@ -1,0 +1,88 @@
+/**
+ * Memos v0.26.2 Custom CSS - My Personal Setup
+ * Selected CSS customizations I use daily
+ */
+
+/* ==================================================
+ * TYPOGRAPHY
+ * Inter font with optimized spacing and readability
+ * ================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --memo-font: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--memo-font) !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.memo-content {
+  font-size: 15px !important;
+  line-height: 1.75 !important;
+  letter-spacing: -0.01em;
+}
+
+.memo-content p {
+  margin-bottom: 0.6em;
+}
+
+
+/* ==================================================
+ * FULL WIDTH LAYOUT
+ * Use all available screen space
+ * ================================================== */
+.max-w-2xl,
+.max-w-3xl,
+.max-w-4xl,
+.max-w-5xl {
+  max-width: 100% !important;
+}
+
+
+/* ==================================================
+ * MEMO CARD HOVER
+ * Subtle elevation effect on memo cards
+ * ================================================== */
+.group.rounded-lg.border {
+  transition: transform 0.18s ease, box-shadow 0.18s ease !important;
+}
+
+.group.rounded-lg.border:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.10) !important;
+  border-color: rgba(99, 102, 241, 0.25) !important;
+}
+
+
+/* ==================================================
+ * HIDE SCROLLBAR
+ * Completely hides scrollbar while keeping scroll functionality
+ * ================================================== */
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: none !important;
+}
+
+
+/* ==================================================
+ * HIDE EXPLORE SECTION
+ * Hides the "Explore" link from sidebar
+ * ================================================== */
+a[href="/explore"] {
+  display: none !important;
+}
+
+
+/* ==================================================
+ * HIDE INBOX SECTION
+ * Hides the "Inbox" link from sidebar
+ * ================================================== */
+a[href="/inbox"] {
+  display: none !important;
+}

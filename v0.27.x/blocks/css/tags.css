@@ -1,0 +1,32 @@
+/* ==================================================
+ * TAG STYLING (pill appearance only)
+ * Pill-style appearance for tags WITHOUT custom colors
+ * Uses neutral gray background
+ * ================================================== */
+a[href*="/tags/"],
+.tag-span,
+span[class*="tag"] {
+  display: inline-block !important;
+  padding: 1px 9px !important;
+  border-radius: 99px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  transition: opacity 0.15s !important;
+  background-color: #e5e7eb !important;
+  color: #374151 !important;
+}
+
+a[href*="/tags/"]:hover,
+.tag-span:hover {
+  opacity: 0.72 !important;
+  text-decoration: none !important;
+}
+
+/* Dark mode */
+.dark a[href*="/tags/"],
+.dark .tag-span,
+.dark span[class*="tag"] {
+  background-color: #374151 !important;
+  color: #e5e7eb !important;
+}

@@ -1,0 +1,10 @@
+/* ==================================================
+ * FULL WIDTH LAYOUT
+ * Use all available screen space
+ * ================================================== */
+.max-w-2xl,
+.max-w-3xl,
+.max-w-4xl,
+.max-w-5xl {
+  max-width: 100% !important;
+}
