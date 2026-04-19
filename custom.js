@@ -5,6 +5,8 @@
 
 /* ==================================================
  * TAG COLORS
+ * Assigns consistent colors to tags based on their name
+ * Self-contained: includes pill styling + color application
  * ================================================== */
 (function tagColors() {
   const PALETTE = [
@@ -65,6 +67,10 @@
 
 /* ==================================================
  * KEYBOARD SHORTCUTS
+ * Alt+F: Focus search bar
+ * Alt+T: Insert current timestamp YYYY-MM-DD HH:mm
+ * Alt+↑: Scroll to top
+ * Alt+↓: Scroll to bottom
  * ================================================== */
 (function keyboardShortcuts() {
   document.addEventListener('keydown', e => {
@@ -74,6 +80,22 @@
       e.preventDefault();
       const search = document.querySelector('input[type=search], input[placeholder*="earch"]');
       if (search) { search.focus(); search.select(); }
+    }
+
+    if (e.key === 't' || e.key === 'T') {
+      e.preventDefault();
+      const el = document.activeElement;
+        
+      if (el && (el.tagName === 'TEXTAREA' || el.tagName === 'INPUT')) {
+        const d = new Date();
+        const pad = n => n.toString().padStart(2, '0');
+        const timestamp = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())} `;
+        const start = el.selectionStart;
+        const end = el.selectionEnd;
+        el.value = el.value.substring(0, start) + timestamp + el.value.substring(end);
+        el.selectionStart = el.selectionEnd = start + timestamp.length;
+        el.dispatchEvent(new Event('input', { bubbles: true }));
+      }
     }
     
     if (e.key === 'ArrowUp') {
@@ -91,6 +113,8 @@
 
 /* ==================================================
  * AUTO FOCUS EDITOR
+ * Automatically focuses the editor on page load
+ * Alt+N: Manually focus editor anytime
  * ================================================== */
 (function autoFocusEditor() {
   function focus() {
@@ -111,12 +135,16 @@
 
 /* ==================================================
  * COMPACT ATTACHMENTS
+ * Makes attachment previews smaller based on view mode
+ * List view: 10 columns | Masonry view: 5 columns
+ * Self-contained: injects its own CSS
  * ================================================== */
 (function compactAttachments() {
   const GRID_SELECTOR = '.grid.grid-cols-2';
   const LIST_COLS = 10;
   const MASONRY_COLS = 5;
 
+  // Inject CSS once
   const style = document.createElement('style');
   style.textContent = `
     body.view-list ${GRID_SELECTOR} { grid-template-columns: repeat(${LIST_COLS}, 1fr) !important; }
@@ -124,6 +152,7 @@
   `;
   document.head.appendChild(style);
 
+  // Detect view mode and apply class
   function detect() {
     const grid = document.querySelector('[style*="grid-template-columns"]');
     if (!grid) return;
@@ -141,6 +170,9 @@
 
 /* ==================================================
  * WORD COUNTER
+ * Shows word and character count while typing
+ * Auto-hides after 2.8 seconds
+ * Supports 9 languages (en, es, zh, ja, de, fr, pt, it, ko)
  * ================================================== */
 (function wordCounter() {
   const TRANSLATIONS = {
